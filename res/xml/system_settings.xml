@@ -16,4 +16,9 @@
 
     </PreferenceCategory>
 
+	<PreferenceScreen
+            android:key="halo_control"
+            android:fragment="com.android.settings.rascarlo.HaloControl"
+            android:title="@string/halo_control_title" />
+
 </PreferenceScreen>
