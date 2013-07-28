@@ -29,7 +29,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements
 
 			private CheckBoxPreference mToggleLargeTextPreference;
 			private CheckBoxPreference mLockscreenQuickUnlockControl;		
-	
+
 
 	private void handleToggleLargeTextPreferenceClick() {
 		try {
@@ -66,17 +66,10 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
                     mLockscreenQuickUnlockControl.isChecked());         
 		}
-	
+
 		return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
  
 
  }
-
-
-
-
-
-
-
 

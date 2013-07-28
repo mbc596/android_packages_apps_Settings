@@ -14,4 +14,8 @@
     <!-- Quick Unlock  -->
     <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
 
+    <!-- Volume Adjust sound -->
+    <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
+    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with volume rocker</string>
+
 </resources>
