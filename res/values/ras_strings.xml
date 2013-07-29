@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- MyOw Rom Settings  -->
+    <!-- System Interface settings  -->
+    <string name="system_settings_title">Advanced options</string>
+    <string name="system_interface_title">Advanced options</string>
+
+</resources>
