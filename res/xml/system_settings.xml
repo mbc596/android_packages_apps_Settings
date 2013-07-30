@@ -16,6 +16,11 @@
             android:title="@string/halo_control_title" />
 
 	<PreferenceScreen
+            android:key="teclas_de_volumen"
+            android:fragment="com.android.settings.rascarlo.VolumeRocker"
+            android:title="@string/volum_teclas_category" />
+
+	<PreferenceScreen
             android:key="extras"
             android:fragment="com.android.settings.rascarlo.Extras"
             android:title="@string/extras" />

@@ -27,4 +27,14 @@
     <!-- kill app long press back -->
     <string name="kill_app_longpress_back">Kill app</string>
     <string name="kill_app_longpress_back_summary">Cierra la aplicación en primer plano manteniendo pulsado el botón atrás</string>
+    
+    <!-- VOLUME ROCKER -->
+    <string name="volum_teclas_category">Teclas de volumen</string>
+    <!-- Volume rocker wake -->
+    <string name="pref_volume_wake_title">Despertar</string>
+    <string name="pref_volume_wake_summary">Despertar el Nexus con las teclas de volumen</string>
+    <!-- Volume rocker music control -->
+    <string name="volbtn_music_controls_title">Control de la música</string>
+    <string name="volbtn_music_controls_summary">Cambiar de canción manteniendo pulsado la tecla de volumen (superior o inferior). Solo con la pantalla apagada</string>
+    
 </resources>

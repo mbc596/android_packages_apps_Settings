@@ -9,10 +9,6 @@
     <!-- System Interface settings  -->
     <string name="system_settings_title">Advanced options</string>
     <string name="system_interface_title">Advanced options</string>
-    <!-- EXTRAS  -->
-    <string name="extras">Extras</string>
-    <!-- Quick Unlock  -->
-    <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
     <!-- NAVBAR  -->
     <string name="navbar">Navigation bar</string>
     <!-- Navigation Bar Height -->
@@ -25,7 +21,22 @@
     <string name="navigation_bar_height_28">28dp</string>
     <string name="navigation_bar_height_24">24dp</string>
     <string name="navigation_bar_height_20">20dp</string>
-    <string name="navigation_bar_height_0">0dp (hide)</string>
+    <string name="navigation_bar_height_0">0dp (hide)</string>    
+    <!-- VOLUME ROCKER -->
+    <string name="volum_teclas_category">Volume rocker</string>
+    <!-- Volume rocker wake -->
+    <string name="pref_volume_wake_title">Volume rocker wake</string>
+    <string name="pref_volume_wake_summary">Pressing the volume rocker will wake your Nexus</string>
+    <!-- Volume rocker music control -->
+    <string name="volbtn_music_controls_title">Volume rocker music controls</string>
+    <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
+    <!-- EXTRAS  -->
+    <string name="extras">Extras</string>
+    <!-- Quick Unlock  -->
+    <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
+    <!-- kill app long press back -->
+    <string name="kill_app_longpress_back">Kill app back button</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
 
     <!-- Volume Adjust sound -->
     <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
@@ -38,9 +49,5 @@
     <!-- Sound settings screen -->
     <string name="volume_overlay_title">Volume panel style</string>
     <string name="volume_ring_only_description">Ringtone</string>
-
-    <!-- kill app long press back -->
-    <string name="kill_app_longpress_back">Kill app back button</string>
-    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
-
+    
 </resources>
