@@ -10,4 +10,7 @@
     <string name="system_settings_title">Advanced options</string>
     <string name="system_interface_title">Advanced options</string>
 
+    <!-- Quick Unlock Pin -->
+<string name="lockscreen_quick_unlock_control_title">Quick unlock</string> 
+
 </resources>
