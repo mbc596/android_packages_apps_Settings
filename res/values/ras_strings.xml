@@ -4,8 +4,4 @@
     <!-- About phone screen, build date of ROM -->
     <string name="build_date">MyOwR build date</string>
     <string name="build_date_default">2012-01-01-0000</string>
-
-    <!-- Opciones avanzadas Settings -->
-    <string name="myowr_settings">Opciones avanzadas</string>
-    <string name="myowr_options">Opciones avanzadas</string>
 </resources>

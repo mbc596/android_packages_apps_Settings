@@ -97,12 +97,6 @@
         android:title="@string/applications_settings"
         android:id="@+id/application_settings" />
 
-    <!-- MyOw Rom Settings -->
-    <header
-        android:id="@+id/myowr_settings"
-        android:fragment="com.android.settings.mbc596.SystemSettings"
-        android:title="@string/myowr_options" />
-
     <!-- Manage users -->
     <header
         android:fragment="com.android.settings.users.UserSettings"
