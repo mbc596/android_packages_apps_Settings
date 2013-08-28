@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.mbc596;
+package com.android.settings.rascarlo;
 
 import android.os.Bundle;
 import android.preference.Preference;
