@@ -1904,15 +1904,27 @@
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
 
   <!-- HALO -->
-    <string name="halo_control_title">Opciones de HALO</string>
-    <string name="halo_hide_title">Ocultar HALO tras la actividad</string>
-    <string name="halo_hide_summary">HALO aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
+    <string name="halo_control_title">Opciones de Halo</string>
+    <string name="halo_hide_title">Ocultar Halo tras la actividad</string>
+    <string name="halo_hide_summary">Halo aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
     <string name="halo_reversed_title">Revertir gestos de HALO</string>
     <string name="halo_reversed_summary">Aplica tareas o arrastrar al gesto de la doble pulsación</string>
-    <string name="halo_state_title">Política de HALO</string>
+    <string name="halo_state_title">Política de Halo</string>
     <string name="halo_state_summary">Para notificiaciones en lista negra/blanca a través de la aplicación de HALO</string>
     <string name="halo_state_black">Lista negra</string>
     <string name="halo_state_white">Lista blanca</string>
-    <string name="app_halo_label_black">Lista negra de notificaciones HALO</string>
-    <string name="app_halo_label_white">Lista blanca de notificaciones HALO</string>
+    <string name="app_halo_label_black">Lista negra de notificaciones Halo</string>
+    <string name="app_halo_label_white">Lista blanca de notificaciones Halo</string>
+    <string name="halo_pause_title">Halo pausa la aplicación activa</string>
+    <string name="halo_pause_summary">Al abrir una aplicación con Halo la aplicación anterior se pausará (activado por defecto en los dispositivos con poca memoria)</string>
+
+    <string name="halo_size_title">Tamaño de Halo</string>
+    <string name="halo_size_summary">Definir cómo de grande va a ser Halo</string>
+    <string name="halo_size_miniscule">Minisculo</string>
+    <string name="halo_size_small">Pequeño</string>
+    <string name="halo_size_default">Normal (por defecto)</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monstruoso</string>
+ 
 </resources>
