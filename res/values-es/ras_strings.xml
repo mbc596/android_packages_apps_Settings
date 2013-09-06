@@ -9,4 +9,14 @@
     <string name="system_settings_title">Opciones avanzadas</string>
     <string name="system_interface_title">Opciones avanzadas</string>
 
+   <!-- Sound settings screen, volumes -->
+    <string name="link_volume_mutes">El modo silencioso afecta a las notificaciones</string>
+
+    <!-- Sound settings screen -->
+    <string name="volume_overlay_title">Estilo del panel de volumen</string>
+    <string name="volume_ring_only_description">Tono del teléfono</string>
+
+    <!-- Volume Adjust sound -->
+    <string name="volume_adjust_sounds_enable_title">Ajustes del volumen</string>
+    <string name="volume_adjust_sounds_enable_summary">Reproducir sonido al ajustar el volumen con el control de volumen</string>
 </resources>
