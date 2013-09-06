@@ -10,4 +10,9 @@
             android:fragment="com.android.settings.rascarlo.HaloControl"
             android:title="@string/halo_control_title" />
 
+	<PreferenceScreen
+            android:key="extras"
+            android:fragment="com.android.settings.rascarlo.Extras"
+            android:title="@string/extras" />
+
 </PreferenceScreen>

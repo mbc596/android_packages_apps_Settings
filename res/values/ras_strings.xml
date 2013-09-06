@@ -9,6 +9,10 @@
     <!-- System Interface settings  -->
     <string name="system_settings_title">Advanced options</string>
     <string name="system_interface_title">Advanced options</string>
+    <!-- EXTRAS  -->
+    <string name="extras">Extras</string>
+    <!-- Quick Unlock  -->
+    <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
 
     <!-- Volume Adjust sound -->
     <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
