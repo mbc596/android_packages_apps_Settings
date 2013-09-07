@@ -8,6 +8,8 @@
     <!-- System Interface settings  -->
     <string name="system_settings_title">Opciones avanzadas</string>
     <string name="system_interface_title">Opciones avanzadas</string>
+    <!-- NAVBAR  -->
+    <string name="navbar">Barra de navegación</string>
 
    <!-- Sound settings screen, volumes -->
     <string name="link_volume_mutes">El modo silencioso afecta a las notificaciones</string>
