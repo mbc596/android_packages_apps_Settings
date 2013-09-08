@@ -1904,7 +1904,7 @@
     <string name="regulatory_info_text" msgid="5623087902354026557"></string>
 
   <!-- HALO -->
-    <string name="halo_control_title">Opciones de Halo</string>
+    <string name="halo_control_title">HALO</string>
     <string name="halo_hide_title">Ocultar Halo tras la actividad</string>
     <string name="halo_hide_summary">Halo aparecerá para tareas entrantes y se desplazará fuera de vista después de un rato</string>
     <string name="halo_reversed_title">Revertir gestos de HALO</string>
