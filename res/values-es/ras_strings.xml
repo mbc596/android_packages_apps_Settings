@@ -10,6 +10,8 @@
     <string name="system_interface_title">Opciones avanzadas</string>
     <!-- NAVBAR  -->
     <string name="navbar">Barra de navegación</string>
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_height">Tamaño (dp)</string>
 
    <!-- Sound settings screen, volumes -->
     <string name="link_volume_mutes">El modo silencioso afecta a las notificaciones</string>
