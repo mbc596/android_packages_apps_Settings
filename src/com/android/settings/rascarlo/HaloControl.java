@@ -25,12 +25,14 @@ import com.android.settings.Utils;
 
 public class HaloControl extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_HALO_ENABLED = "halo_enabled";
     private static final String KEY_HALO_STATE = "halo_state";
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
     private static final String KEY_HALO_SIZE = "halo_size";
     private static final String KEY_HALO_PAUSE = "halo_pause";
 
+    private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;
     private ListPreference mHaloSize;
     private CheckBoxPreference mHaloHide;
@@ -50,6 +52,10 @@ public class HaloControl extends SettingsPreferenceFragment implements Preferenc
 
         mNotificationManager = INotificationManager.Stub.asInterface(
                 ServiceManager.getService(Context.NOTIFICATION_SERVICE));
+
+        mHaloEnabled = (CheckBoxPreference) findPreference(KEY_HALO_ENABLED);
+        mHaloEnabled.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.HALO_ENABLED, 0) == 1);
 
         mHaloState = (ListPreference) prefSet.findPreference(KEY_HALO_STATE);
         mHaloState.setValue(String.valueOf((isHaloPolicyBlack() ? "1" : "0")));
@@ -102,6 +108,10 @@ public class HaloControl extends SettingsPreferenceFragment implements Preferenc
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_PAUSE, mHaloPause.isChecked()
                     ? 1 : 0);
+        } else if  (preference == mHaloEnabled) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.HALO_ENABLED,
+                    mHaloEnabled.isChecked() ? 1 : 0);
 	}	
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
