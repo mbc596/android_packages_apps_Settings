@@ -2,7 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">MyOwR build date</string>
+    <string name="build_date">Build date</string>
     <string name="build_date_default">2012-01-01-0000</string>
     
     <!-- MyOw Rom Settings  -->
@@ -10,8 +10,23 @@
     <string name="system_settings_title">Advanced options</string>
     <string name="system_interface_title">Advanced options</string>
 
-    <!-- Quick Unlock Pin -->
-<string name="lockscreen_quick_unlock_control_title">Quick unlock</string> 
+    <!-- EXTRAS  -->
+    <string name="extras">Extras</string>
+    <!-- Quick Unlock  -->
+    <string name="lockscreen_quick_unlock_control_title">Quick unlock</string>
+    <!-- NAVBAR  -->
+    <string name="navbar">Navigation bar</string>
+    <!-- Navigation Bar Height -->
+    <string name="navigation_bar_height">Navigation bar height</string>
+    <string name="navigation_bar_height_48">48dp (default)</string>
+    <string name="navigation_bar_height_44">44dp</string>
+    <string name="navigation_bar_height_40">40dp</string>
+    <string name="navigation_bar_height_36">36dp</string>
+    <string name="navigation_bar_height_32">32dp</string>
+    <string name="navigation_bar_height_28">28dp</string>
+    <string name="navigation_bar_height_24">24dp</string>
+    <string name="navigation_bar_height_20">20dp</string>
+    <string name="navigation_bar_height_0">0dp (hide)</string>
 
     <!-- Volume Adjust sound -->
     <string name="volume_adjust_sounds_enable_title">Volume adjustment sound</string>
