@@ -18,6 +18,7 @@ package com.android.settings.rascarlo;
 
 import android.app.ActivityManagerNative;
 import android.os.Bundle;
+import android.content.ContentResolver;
 import android.content.res.Configuration;
 import android.preference.Preference;
 import android.preference.CheckBoxPreference;
@@ -41,10 +42,13 @@ public class Extras extends SettingsPreferenceFragment implements
     private static final String KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL = 
 	        "lockscreen_quick_unlock_control";
 
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+
 		private final Configuration mCurConfig = new Configuration();
 
 			private CheckBoxPreference mToggleLargeTextPreference;
-			private CheckBoxPreference mLockscreenQuickUnlockControl;		
+			private CheckBoxPreference mLockscreenQuickUnlockControl;
+			private CheckBoxPreference mKillAppLongpressBack;		
 
 
 	private void handleToggleLargeTextPreferenceClick() {
@@ -72,14 +76,39 @@ public class Extras extends SettingsPreferenceFragment implements
         mLockscreenQuickUnlockControl = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_QUICK_UNLOCK_CONTROL);
         mLockscreenQuickUnlockControl.setChecked(Settings.System.getBoolean(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL, false)); 
+			   //Kill App
+       mKillAppLongpressBack = (CheckBoxPreference) findPreference(KILL_APP_LONGPRESS_BACK);
+        mKillAppLongpressBack.setChecked(Settings.System.getBoolean(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KILL_APP_LONGPRESS_BACK, false));
 		}
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        final ContentResolver cr = getActivity().getContentResolver();
+        updateKillAppLongpressBackOptions();
+
+    }
+
+    private void writeKillAppLongpressBackOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_BACK,
+                mKillAppLongpressBack.isChecked() ? 1 : 0);
+    }
+
+    private void updateKillAppLongpressBackOptions() {
+        mKillAppLongpressBack.setChecked(Settings.Secure.getInt(
+            getActivity().getContentResolver(), Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
+    }
 
    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {	
-    if (preference == mLockscreenQuickUnlockControl) {
+   	if (preference == mLockscreenQuickUnlockControl) {
             Settings.System.putBoolean(getContentResolver(),
                     Settings.System.LOCKSCREEN_QUICK_UNLOCK_CONTROL,
-                    mLockscreenQuickUnlockControl.isChecked());         
+                    mLockscreenQuickUnlockControl.isChecked());
+        } else if (preference == mKillAppLongpressBack) {
+            writeKillAppLongpressBackOptions();        
 		}
 
 		return super.onPreferenceTreeClick(preferenceScreen, preference);

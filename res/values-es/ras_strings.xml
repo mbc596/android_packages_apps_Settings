@@ -23,4 +23,8 @@
     <!-- Volume Adjust sound -->
     <string name="volume_adjust_sounds_enable_title">Ajustes del volumen</string>
     <string name="volume_adjust_sounds_enable_summary">Reproducir sonido al ajustar el volumen con el control de volumen</string>
+
+    <!-- kill app long press back -->
+    <string name="kill_app_longpress_back">Kill app</string>
+    <string name="kill_app_longpress_back_summary">Cierra la aplicación en primer plano manteniendo pulsado el botón atrás</string>
 </resources>
