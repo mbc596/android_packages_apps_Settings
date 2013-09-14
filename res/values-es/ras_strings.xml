@@ -36,19 +36,5 @@
     <!-- Volume rocker music control -->
     <string name="volbtn_music_controls_title">Control de la música</string>
     <string name="volbtn_music_controls_summary">Cambiar de canción manteniendo pulsado la tecla de volumen (superior o inferior). Solo con la pantalla apagada</string>
-
-    <!-- Status bar  -->
-    <string name="status_bar_title">Barra de Estado</string>
-    <string name="status_bar_clock_title">Reloj</string>
-    <string name="status_bar_general_title">General</string>
-    <string name="status_bar_show_clock_title">Mostrar reloj</string>
-    <string name="status_bar_am_pm_title">Estilo AM/PM</string>
-    <string name="status_bar_am_pm_info">Reloj de 24 horas está activado</string>
-    <string name="status_bar_battery_title">Estilo de la Batería</string>
-    <string name="status_bar_style_icon">Icono</string>
-    <string name="status_bar_style_hidden">Oculto</string>
-    <string name="status_bar_battery_status_percentage">Porcentaje</string>
-    <string name="status_bar_battery_status_circle">Circular</string>
-    <string name="status_bar_battery_status_circle_percentage">Circular con porcentaje</string>
     
 </resources>
